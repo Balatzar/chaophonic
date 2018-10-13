@@ -1,5 +1,5 @@
 import io from "socket.io-client";
 
-const createSocket = room => io(`http://178.128.199.190:4000/?room=${room}`);
+const createSocket = room => io(`https://chaophonic.skilled.af/?room=${room}`);
 
 export { createSocket };
