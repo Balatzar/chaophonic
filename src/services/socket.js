@@ -1,5 +1,5 @@
 import io from "socket.io-client";
 
-const createSocket = room => io(`https://ac3b8dce.ngrok.io?room=${room}`);
+const createSocket = room => io(`http://178.128.199.190:4000/?room=${room}`);
 
 export { createSocket };
