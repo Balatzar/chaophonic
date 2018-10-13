@@ -5,7 +5,7 @@ import Conversation from "../components/Conversation";
 
 class Tchat extends Component {
   state = {
-    conversation: ["b", "o", "Enter", "p", "l", "o", "o", "p"],
+    conversation: [],
     speakers: [],
   };
 
@@ -49,9 +49,7 @@ class Tchat extends Component {
                 <div className="speaker" key={i}>
                   <img
                     alt="speaker-avatar"
-                    src={`https://api.adorable.io/avatars/50/${Math.floor(
-                      Math.random() * 100
-                    )}@chaophonic.png`}
+                    src={`https://api.adorable.io/avatars/50/${i}@chaophonic.png`}
                   />
                 </div>
               );
